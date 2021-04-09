@@ -1,20 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-	int a,b,p=0,q;
+	int a, b, p = 0, q;
 	printf("Enter a Number: ");
-	scanf("%d",&a);
-	b=a%10;
-	while(a!=0)
+	scanf("%d", &a);
+	b = a % 10;
+	while (a != 0)
 	{
-		a=a%10;
-		q=a%10;
-		p=p*10+q;
+		a = a % 10;
+		q = a % 10;
+		p = p * 10 + q;
 	}
-	p=p%10;
-	if(b==p)
+	p = p % 10;
+	if (b == p)
 	{
-		printf("1st Digit & Last Digit are same",b);
+		printf("1st Digit & Last Digit are same", b);
 	}
+	else
+	{
+		printf("1st Digit & Last Digit are not same", b);
+	}
+
 	return 0;
 }
