@@ -12,12 +12,11 @@ int main()
 		for (p = 2; p < i; p++)
 		{
 			if (i % p == 0)
-				x = 1;
+				x ++;
 		}
 		if (x == 2)
-		{
 			Printf("%d ", i);
-		}
 	}
 	return 0;
 }
+
