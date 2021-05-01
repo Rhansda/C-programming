@@ -1,23 +1,20 @@
 #include <stdio.h>
 int main()
 {
-	int a, b, i, p, x;
+	int a, b, i, x;
 	printf("Enter 1st number: ");
 	scanf("%d", &a);
 	printf("Enter 2nd number: ");
 	scanf("%d", &b);
-	for (i = a; i <= b; i++)
+	for (i = a + 1; i <= b - 1; i++)
 	{
-		x = 0;
-		for (p = 2; p < i; p++)
+		for (x = 2; x < i; x++)
 		{
-			if (i % p == 0)
-				x = 1;
+			if (i % x == 0)
+				break;
 		}
-		if (x == 2)
-		{
-			Printf("%d ", i);
-		}
+		if (x == i)
+			printf("%d ", i);
 	}
 	return 0;
 }
