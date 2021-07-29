@@ -6,7 +6,7 @@ int main()
 	scanf("%d", &a);
 	printf("Enter 2nd number: ");
 	scanf("%d", &b);
-	for (i = a + 1; i <= b - 1; i++)
+	for (i = a; i <= b; i++)
 	{
 		for (x = 2; x < i; x++)
 		{

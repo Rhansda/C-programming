@@ -1,23 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-	int n,p,x=0;
+	int n, p, x = 0;
 	printf("Enter a Number= ");
-	scanf("%d",&n);
-	while(n!=0)
+	scanf("%d", &n);
+	while (n != 0)
 	{
-		p=n%10; 
-		n=n/10;
-		if(p==0)
+		p = n % 10;
+		n = n / 10;
+		if (p == 0)
 		{
-			x=1;
+			x = 1;
 		}
-		if(x==0)
-		printf("the number is a Duck Number",n);
+		if (x == 0)
+			printf("the number is not Duck Number", n);
 		else
 		{
-			printf("the number is not a duck number",n);
-			
+			printf("the number is a duck number", n);
 		}
 		return 0;
 	}
