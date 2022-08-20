@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+</head>
+<body>
+    <h2>This is Registration form</h2>
+    <form action="backend.php">
+        <label for="name"></label>
+        <div>
+            Name: <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+        Appliation Id: <input type="text">
+        </div>
+        <br>
+        <div>
+        Date of Birth: <input type="date">
+        </div>
+        <br>
+        <div>
+        Gender: Male<input type="radio" name="gender"> FeMale<input type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+        Are you Indian?: <input type="checkbox" name="eligible">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="mytext" cols="50" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Choose subject"> Choose subject</label>
+            <select name="Choose subject" id="Choose subject">
+                <option value="Math" selected>Math </option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>
